@@ -2,7 +2,7 @@
 
 原始项目见[Zepto](https://github.com/madrobby/zepto)
 
-## 本分之提供的特性
+## 本分支提供的特性
 
 1、添加`withCredentials`支持，修复在`xhr.open`前设置`withCredentials`报`INVALID_STATE_ERR`错误的问题
 
@@ -30,4 +30,10 @@ $ npm run-script dist
 
 ~~~ sh
 $ MODULES="zepto event data" npm run-script dist
+~~~
+
+## 单元测试
+
+~~~ sh
+npm test
 ~~~
