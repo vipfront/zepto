@@ -263,10 +263,13 @@
       return xhr
     }
 
-    if (settings.xhrFields) for (name in settings.xhrFields) xhr[name] = settings.xhrFields[name]
+    if (settings.xhrFields) for (name in settings.xhrFields) if ('withCredentials' != name) xhr[name] = settings.xhrFields[name]
 
     var async = 'async' in settings ? settings.async : true
     xhr.open(settings.type, settings.url, async, settings.username, settings.password)
+
+    // must set after xhr.open
+    if (settings.crossDomain) xhr.withCredentials = true
 
     for (name in headers) nativeSetHeader.apply(xhr, headers[name])
 
