@@ -4,9 +4,11 @@
 
 ## 本分支提供的特性
 
-1、添加`withCredentials`支持，修复在`xhr.open`前设置`withCredentials`报`INVALID_STATE_ERR`错误的问题
+1、兼容SeaJS模块，不需要自己改源码加define头
 
-2、修复2个手指连续点击或滑动导致的trigger相应时间出错的问题
+2、添加`withCredentials`支持，修复在`xhr.open`前设置`withCredentials`报`INVALID_STATE_ERR`错误的问题
+
+3、修复2个手指连续点击或滑动导致的trigger相应时间出错的问题
 
 ## 构建
 

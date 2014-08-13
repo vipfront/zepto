@@ -882,3 +882,10 @@ var Zepto = (function() {
 // If `$` is not yet defined, point it to `Zepto`
 window.Zepto = Zepto
 window.$ === undefined && (window.$ = Zepto)
+
+// exports to seajs
+if(window.seajs) {
+    define(function(require, exports, module) {
+        module.exports = window.Zepto;
+    });
+}
