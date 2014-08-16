@@ -4,11 +4,13 @@
 
 ## 本分支提供的特性
 
-1、兼容SeaJS模块，不需要自己改源码加define头
+1、兼容`SeaJS`模块，不需要自己改源码加 `define`头
+
+2、增加`$.noop`，其值是一个空函数
 
 2、添加`withCredentials`支持，修复在`xhr.open`前设置`withCredentials`报`INVALID_STATE_ERR`错误的问题
 
-3、修复2个手指连续点击或滑动导致的trigger相应时间出错的问题
+3、修复2个手指连续点击或滑动导致的`evaluating 'touch.el.trigger'`出错的问题
 
 ## 构建
 
@@ -16,7 +18,7 @@
 
 2、clone本项目的源代码
 
-3、进入源代码目录，安装依赖包
+3、进入源代码目录，运行下面的命令安装依赖包
 
 ~~~ sh
 $ npm install
