@@ -6,11 +6,11 @@
 
 1、兼容`SeaJS`模块，不需要自己改源码加 `define`头
 
-2、增加`$.noop`，其值是一个空函数
+2、支持`$.noop`、`$.now`、`$.error`，其用法同`jQuery`
 
-2、添加`withCredentials`支持，修复在`xhr.open`前设置`withCredentials`报`INVALID_STATE_ERR`错误的问题
+3、添加`withCredentials`支持，修复在`xhr.open`前设置`withCredentials`报`INVALID_STATE_ERR`错误的问题
 
-3、修复2个手指连续点击或滑动导致的`evaluating 'touch.el.trigger'`出错的问题
+4、修复2个手指连续点击或滑动导致的`evaluating 'touch.el.trigger'`错误的问题
 
 ## 构建
 

@@ -345,6 +345,10 @@ var Zepto = (function() {
   $.support = { }
   $.expr = { }
   $.noop = function() {}
+  $.now = Date.now
+  $.error = function(msg) {
+    throw new Error(msg)
+  }
 
   $.map = function(elements, callback){
     var value, values = [], i, key
