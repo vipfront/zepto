@@ -891,6 +891,9 @@ window.$ === undefined && (window.$ = Zepto)
 // exports to seajs
 if(window.seajs) {
     define(function(require, exports, module) {
-        module.exports = window.Zepto;
-    });
+        module.exports = window.Zepto
+    })
+    define('zepto', [], function(require, exports, module) {
+        module.exports = window.Zepto
+    })
 }
