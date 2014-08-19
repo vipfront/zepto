@@ -12,6 +12,8 @@
 
 4、修复2个手指连续点击或滑动导致的`evaluating 'touch.el.trigger'`错误的问题
 
+5、修复三星机型`touchmove`过于敏感导致`longTap`事件失效的问题
+
 ## 构建
 
 1、安装[NodeJS](http://nodejs.org/)
