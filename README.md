@@ -16,6 +16,8 @@
 
 ## 构建
 
+`dist`目录里有已构建好的版本，可以直接使用，集成了`zepto callbacks deferred event ajax form touch`模块，如果需要自定义模块的话就需要手动构建了
+
 1、安装[NodeJS](http://nodejs.org/)
 
 2、clone本项目的源代码
