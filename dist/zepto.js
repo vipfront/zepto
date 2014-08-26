@@ -1,4 +1,4 @@
-/* Zepto v1.1.4-25-g7ad2418 - zepto callbacks deferred event ajax form touch - zeptojs.com/license */
+/* Zepto v1.1.4-26-g456386e - zepto callbacks deferred event ajax form touch - zeptojs.com/license */
 
 var Zepto = (function() {
   var undefined, key, $, classList, emptyArray = [], slice = emptyArray.slice, filter = emptyArray.filter,
@@ -887,9 +887,6 @@ window.$ === undefined && (window.$ = Zepto)
 
 if(window.seajs) {
     define(function(require, exports, module) {
-        module.exports = window.Zepto
-    })
-    define('zepto', [], function(require, exports, module) {
         module.exports = window.Zepto
     })
 }
